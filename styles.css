@@ -231,3 +231,84 @@ footer {
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
     margin-top: 2rem;
 }
+
+/* Galeria de Imagens */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; /* Aumenta o espaçamento entre figuras */
+    padding: 1em;
+    background-color: #000; /* Fundo preto */
+}
+
+figure {
+    margin: 0;
+    width: 400px; /* Aumenta o tamanho das figuras */
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: rotateIn 1s ease-in-out forwards, fadeIn 1s forwards;
+}
+
+figure:hover {
+    transform: scale(1.1) rotate(10deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao passar o mouse */
+}
+
+img {
+    width: 100%; /* Ajusta a imagem para ocupar toda a largura disponível */
+    height: auto;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    border-radius: 10px; /* Remove os cantos quadrados */
+}
+
+figure img:hover {
+    transform: scale(1.2) rotate(-10deg);
+    transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+    filter: brightness(1.2) contrast(1.2);
+}
+
+figcaption {
+    padding: 0.5em;
+    color: #fff; /* Texto das legendas e descrições em branco */
+    background-color: #000; /* Fundo preto */
+}
+
+figure p {
+    margin: 0.5em 0 0;
+    padding: 1em;
+    color: #fff; /* Texto das legendas e descrições em branco */
+    background-color: #000; /* Fundo preto */
+}
+
+/* Keyframes para animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes rotateIn {
+    from {
+        transform: rotate(-180deg);
+    }
+    to {
+        transform: rotate(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}

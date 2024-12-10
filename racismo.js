@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
     // Adiciona o ícone ao site
     var link = document.createElement('link');
@@ -25,8 +26,10 @@ document.addEventListener('DOMContentLoaded', function() {
         ]},
         { name: 'Combate ao Racismo', subItems: [
             { name: ' Combate ao Racismo', link: 'combate.html' },
-            { name: 'Educação e conscientização ', link: 'educação.html' }
-        ]}
+            { name: 'Educação e conscientização ', link: 'edu.html' }
+        ]},
+        { name: 'Imagens Geradas por IA', link: 'imagens_ia.html' },
+        { name: 'Videos', link: 'aulas.html' } // Nova página para "Aulas"
     ];
 
     const menu = document.getElementById('menu');
