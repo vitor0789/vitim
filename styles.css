@@ -1,3 +1,12 @@
+
+#widget-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: grab;
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -183,7 +192,7 @@ nav ul li:hover ul {
     display: none;
     cursor: pointer;
     font-size: 2rem;
-    color: white;
+    color: rgb(221, 0, 0);
     position: absolute;
     right: 20px;
     top: 15px;
