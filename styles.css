@@ -1,4 +1,5 @@
 
+
 #widget-container {
     position: fixed;
     bottom: 20px;
@@ -85,7 +86,7 @@ header .logo {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: url('racismo.jpeg') no-repeat center center fixed;
+    background: url('i/racismo.jpeg') no-repeat center center fixed;
     background-size: cover;
 }
 
